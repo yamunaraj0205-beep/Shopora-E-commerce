@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #17233c;
+  background-color: #ffffff;
+}
+
+/* Header */
+
+.shop {
+  border-bottom: 1px solid rgb(234, 228, 228);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo {
+  font-size: 27px;
+  color: #17233c;
+  font-weight: bold;
+}
+
+.logo-two {
+  font-size: 27px;
+  color: #4f6df5;
+  font-weight: bold;
+}
+
+nav ol li {
+  display: inline;
+  margin: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: #4f6df5;
+}
+
+.login-btn {
+  padding: 10px 20px;
+  background-color: #17233c;
+  border: none;
+  border-radius: 10px;
+}
+
+.login-btn a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Main */
+
+.head main {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+}
+
+.welcome {
+  margin-top: 8px;
+  color: gray;
+}
+
+.content {
+  margin: 20px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.all-section {
+  margin: 50px;
+}
+
+.policy-section {
+  margin-bottom: 50px;
+}
+
+.policy-section h3 {
+  color: #0a2082;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.policy-section li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #17233c;
+  color: white;
+  padding: 15px;
+}
+
+footer h3 {
+  font-size: 15px;
+}

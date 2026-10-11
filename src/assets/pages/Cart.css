@@ -1,0 +1,427 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   CART PAGE
+========================= */
+
+.cart-page-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* =========================
+   CATEGORY
+========================= */
+
+.category-container {
+  width: 100%;
+  height: 39px;
+  border: 0.5px solid rgb(236, 231, 231);
+}
+
+.category-list {
+  font-size: medium;
+  color: gray;
+}
+
+.category {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  background-color: #17233c;
+}
+
+.list {
+  width: 80px;
+  height: 24px;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.category a:hover,
+.category a:active {
+  color: aquamarine;
+}
+
+/* =========================
+   CART CONTAINER
+========================= */
+
+.cart-container-cart-page {
+  width: 90%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 30px;
+  align-items: start;
+}
+
+/* =========================
+   CART ITEM
+========================= */
+
+.cart-item-total {
+  margin-bottom: 20px;
+}
+
+.item-total {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.cart-box {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* =========================
+   CART HEADER
+========================= */
+
+.cart-header {
+  display: grid;
+  grid-template-columns: 100px 1.5fr 1fr 1.2fr 1fr 60px;
+  align-items: center;
+  padding: 18px;
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.cart-header p {
+  margin: 0;
+}
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.Products {
+  display: grid;
+  grid-template-columns: 100px 1.5fr 1fr 1.2fr 1fr 60px;
+  align-items: center;
+  padding: 20px 18px;
+  border-top: 1px solid #ddd;
+}
+
+/* IMAGE */
+
+.cart-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-cart {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+/* NAME */
+
+.product-name {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* PRICE */
+
+.product-price {
+  margin: 0;
+}
+
+/* =========================
+   QUANTITY
+========================= */
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.add-button,
+.less-button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+}
+
+.cart-quantity {
+  font-weight: bold;
+}
+
+/* =========================
+   TOTAL
+========================= */
+
+.cart-product-total p {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* =========================
+   DELETE
+========================= */
+
+.cart-product-delete {
+  text-align: center;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  padding: 5px 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/* =========================
+   ORDER SUMMARY
+========================= */
+
+.order-summary {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+  background-color: #fafafa;
+}
+
+.order-summary h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+
+.summary-row,
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-row p,
+.summary-total p {
+  margin: 10px 0;
+}
+
+.summary-total {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.checkout-button {
+  width: 100%;
+  padding: 13px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #111;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+  .cart-container {
+    grid-template-columns: 1fr 280px;
+    gap: 20px;
+  }
+
+  .cart-header,
+  .Products {
+    grid-template-columns: 80px 1fr 1fr 1fr 1fr 50px;
+  }
+
+  .product-name,
+  .product-price {
+    font-size: 12px;
+  }
+
+  .add-button,
+  .less-button {
+    width: 25px;
+    height: 25px;
+  }
+
+  .cart-product-total p {
+    font-size: 12px;
+  }
+
+  .item-total {
+    font-size: 19px;
+  }
+
+  .order-summary h2 {
+    font-size: 18px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 765px) {
+  .cart-container {
+    width: 90%;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 500px) {
+  .cart-container {
+    width: 95%;
+    margin: 25px auto;
+  }
+
+  .cart-header,
+  .Products {
+    grid-template-columns: 60px 1fr 1fr 1fr 1fr 40px;
+    padding: 10px;
+  }
+
+  .cart-header {
+    font-size: 11px;
+  }
+
+  .product-name,
+  .product-price,
+  .cart-quantity,
+  .cart-product-total p {
+    font-size: 10px;
+  }
+
+  .img-cart {
+    width: 60px;
+    height: 60px;
+  }
+
+  .add-button,
+  .less-button {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+
+  .quantity {
+    gap: 5px;
+  }
+
+  .delete-button {
+    font-size: 9px;
+    padding: 4px 5px;
+  }
+
+  .order-summary {
+    padding: 18px;
+  }
+
+  .order-summary h2 {
+    font-size: 16px;
+  }
+
+  .summary-total {
+    font-size: 16px;
+  }
+
+  .checkout-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* =========================
+   VERY SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+  .cart-container {
+    width: 98%;
+    margin: 20px auto;
+  }
+
+  .cart-header,
+  .Products {
+    grid-template-columns: 40px 1fr 1fr 1fr 1fr 30px;
+    padding: 7px;
+  }
+
+  .cart-header {
+    font-size: 8px;
+  }
+
+  .img-cart {
+    width: 40px;
+    height: 40px;
+  }
+
+  .product-name,
+  .product-price,
+  .cart-quantity,
+  .cart-product-total p {
+    font-size: 8px;
+  }
+
+  .add-button,
+  .less-button {
+    width: 16px;
+    height: 16px;
+    font-size: 7px;
+  }
+
+  .delete-button {
+    font-size: 7px;
+    padding: 3px;
+  }
+
+  .quantity {
+    gap: 3px;
+  }
+
+  .order-summary {
+    padding: 12px;
+  }
+
+  .order-summary h2 {
+    font-size: 13px;
+  }
+
+  .summary-row,
+  .summary-total {
+    font-size: 10px;
+  }
+
+  .summary-total {
+    font-size: 13px;
+  }
+
+  .checkout-button {
+    font-size: 11px;
+    padding: 7px;
+  }
+
+  .item-total {
+    font-size: 13px;
+  }
+}

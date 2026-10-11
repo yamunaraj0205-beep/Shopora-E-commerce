@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #17233c;
+  background: #ffffff;
+}
+
+/* HEADER */
+
+.header {
+  height: 75px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eeeeee;
+  background: white;
+}
+
+.logo {
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #4f6df5;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #17233c;
+  font-size: 15px;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #4f6df5;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.cart {
+  position: relative;
+  text-decoration: none;
+  color: #17233c;
+  font-size: 20px;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #4f6df5;
+  color: white;
+  font-size: 11px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-btn {
+  text-decoration: none;
+  background: #17233c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* CONTACT HERO */
+
+.contact-hero {
+  background: #f4f6fb;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contact-hero p,
+.section-small {
+  color: #4f6df5;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+.contact-hero h1 {
+  font-size: 48px;
+  margin-bottom: 18px;
+}
+
+.contact-hero span {
+  color: #667085;
+  font-size: 17px;
+}
+.privacy-container {
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: white;
+
+  padding: 45px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #071a33;
+  margin-bottom: 10px;
+}
+
+.updated {
+  text-align: center;
+  color: #777;
+  margin-bottom: 35px;
+}
+
+section {
+  margin-top: 30px;
+}
+
+h2 {
+  color: #071a33;
+  margin-bottom: 12px;
+}
+
+p {
+  line-height: 1.7;
+  color: #555;
+}
+
+ul {
+  margin-top: 10px;
+  padding-left: 25px;
+}
+
+li {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.email {
+  color: #071a33;
+  font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #071a33;
+}
+
+footer p {
+  color: white;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  header {
+    padding: 0 5%;
+  }
+
+  .privacy-container {
+    margin: 25px 15px;
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}

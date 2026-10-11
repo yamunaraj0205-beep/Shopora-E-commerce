@@ -1,0 +1,336 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+  font-family: Arial, sans-serif;
+  color: #17233c;
+  background: #ffffff;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.shop {
+  border-bottom: rgb(234, 228, 228) 1px solid;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+
+  padding: 15px;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav ol li {
+  display: inline;
+  margin: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover,
+nav a:active {
+  color: #4f6df5;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+  font-size: 27px;
+  color: #17233c;
+  font-weight: bold;
+}
+
+.logo-two {
+  font-size: 27px;
+  color: #4f6df5;
+  font-weight: bold;
+}
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+
+.login-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.login-btn {
+  padding: 10px 20px;
+
+  background-color: #17233c;
+
+  font-weight: bold;
+
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.terms-main {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 200px;
+  margin-right: 30px;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.head {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 40px;
+}
+
+.welcome {
+  margin-top: 5px;
+  color: gray;
+}
+
+/* =========================
+   INTRODUCTION
+========================= */
+
+.content {
+  margin: 20px;
+  font-weight: bold;
+}
+
+/* =========================
+   ALL TERMS
+========================= */
+
+.all-section {
+  margin: 50px;
+}
+
+/* =========================
+   QUESTION SECTIONS
+========================= */
+
+.first-question,
+.second-question,
+.third-question,
+.fourth-question,
+.fifth-question,
+.sixth-question,
+.seventh-question,
+.eighth-question,
+.ninth-question {
+  margin-bottom: 50px;
+}
+
+/* =========================
+   QUESTION HEADINGS
+========================= */
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth,
+.sixth,
+.seventh,
+.eighth,
+.ninth {
+  margin-bottom: 20px;
+
+  color: #0a2082;
+
+  font-size: 25px;
+}
+
+/* =========================
+   LIST
+========================= */
+
+.all-section li {
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: #17233c;
+
+  color: white;
+
+  padding: 15px;
+}
+
+.footer-content {
+  font-size: 16px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+  .shop {
+    padding: 15px;
+
+    justify-content: space-between;
+  }
+
+  nav ol li {
+    margin: 5px;
+  }
+
+  .terms-main {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .head {
+    margin: 30px 10px;
+  }
+
+  .content {
+    margin: 20px 10px;
+  }
+
+  .all-section {
+    margin: 30px 10px;
+  }
+
+  .first-question,
+  .second-question,
+  .third-question,
+  .fourth-question,
+  .fifth-question,
+  .sixth-question,
+  .seventh-question,
+  .eighth-question,
+  .ninth-question {
+    margin-bottom: 40px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+  .shop {
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 15px;
+  }
+
+  nav ol {
+    padding: 0;
+  }
+
+  nav ol li {
+    margin: 5px;
+  }
+
+  .logo,
+  .logo-two {
+    font-size: 24px;
+  }
+
+  .login-btn {
+    padding: 8px 18px;
+  }
+
+  .terms-main {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .head {
+    margin: 30px 5px;
+  }
+
+  .head h2 {
+    font-size: 22px;
+
+    text-align: center;
+  }
+
+  .welcome {
+    font-size: 17px;
+
+    text-align: center;
+  }
+
+  .content {
+    margin: 20px 5px;
+
+    line-height: 1.6;
+  }
+
+  .all-section {
+    margin: 30px 5px;
+  }
+
+  .first,
+  .second,
+  .third,
+  .fourth,
+  .fifth,
+  .sixth,
+  .seventh,
+  .eighth,
+  .ninth {
+    font-size: 21px;
+  }
+
+  .all-section li {
+    line-height: 1.6;
+
+    margin-bottom: 8px;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .footer-content {
+    font-size: 14px;
+  }
+}
